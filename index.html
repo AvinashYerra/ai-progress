@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A 60-day AI Engineer learning roadmap for beginners." />
+  <title>AI Engineer · One day at a time</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">↗</span> AI / 60</a>
+    <nav>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#projects">Projects</a>
+      <button class="reset" id="resetProgress">Reset progress</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">A PRACTICAL BEGINNER ROADMAP</p>
+      <h1>AI Engineer,<br><em>one day at a time.</em></h1>
+      <p class="hero-copy">Build the skills behind useful AI products — from your first Python script to a production RAG application — in focused daily sessions.</p>
+      <div class="hero-actions">
+        <a href="#roadmap" class="button primary">Start Day 01 <span>↓</span></a>
+        <span class="time-note"><span class="clock">◷</span> 1–2 hours a day</span>
+      </div>
+      <div class="stat-row" aria-label="Roadmap overview">
+        <div><strong>60</strong><span>days</span></div>
+        <div><strong>10</strong><span>phases</span></div>
+        <div><strong>4</strong><span>portfolio builds</span></div>
+      </div>
+    </section>
+
+    <section class="progress-wrap" aria-label="Your progress">
+      <div class="progress-title"><div><span class="green-dot"></span> YOUR JOURNEY</div><span id="progressText">0 of 60 days complete</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <p id="progressMessage">The best time to begin is today. Pick one small thing and ship it.</p>
+    </section>
+
+    <section class="intro" id="roadmap">
+      <p class="eyebrow">THE 60-DAY CURRICULUM</p>
+      <h2>Learn by building,<br>not by collecting courses.</h2>
+      <p>Each day gives you one clear, achievable target. Mark it off, make it yours, and keep moving.</p>
+    </section>
+
+    <section class="phase-nav" id="phaseNav" aria-label="Jump to a phase"></section>
+    <section id="roadmapContent" class="roadmap"></section>
+
+    <section class="portfolio" id="projects">
+      <div class="portfolio-header">
+        <p class="eyebrow">WHAT YOU’LL HAVE TO SHOW</p>
+        <h2>Four things you can<br><em>actually point to.</em></h2>
+      </div>
+      <div class="project-grid">
+        <article><span class="project-num">01</span><h3>Classifier</h3><p>A real-world classification model, compared and documented.</p><span class="project-tag">DAYS 25–27</span></article>
+        <article><span class="project-num">02</span><h3>Recommender</h3><p>A regression or recommendation project with clear evaluation.</p><span class="project-tag">DAYS 28–30</span></article>
+        <article><span class="project-num">03</span><h3>Image classifier</h3><p>A transfer-learning vision model trained on a custom dataset.</p><span class="project-tag">DAYS 31–38</span></article>
+        <article class="featured"><span class="project-num">04</span><h3>Production RAG app</h3><p>A document Q&A system with retrieval, generation, and a FastAPI layer.</p><span class="project-tag">DAYS 56–59</span></article>
+      </div>
+    </section>
+
+    <section class="finish">
+      <p class="eyebrow">DAY 60</p>
+      <h2>Your portfolio is<br>your <em>proof of work.</em></h2>
+      <p>Document the problem, decisions, metrics, challenges, and lessons behind every project. Clear writing turns a build into an opportunity.</p>
+      <button class="button primary" id="completeAll">Mark all complete <span>✓</span></button>
+    </section>
+  </main>
+  <footer><span>AI / 60</span><span>Keep showing up.</span><span>2026</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
